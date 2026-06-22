@@ -121,9 +121,9 @@ section[data-testid="stSidebar"][aria-expanded="false"] ~ .main .block-container
 
 @st.cache_resource
 def train_models():
-    rf     = joblib.load('rf_model.pkl')
-    xgb    = joblib.load('xgb_model.pkl')
-    scaler = joblib.load('scaler.pkl')
+    joblib.load("models/rf_model.pkl")
+    joblib.load("models/xgb_model.pkl")
+    joblib.load("models/scaler.pkl")
     return rf, xgb, scaler
 
 
